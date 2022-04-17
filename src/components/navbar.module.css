@@ -1,0 +1,22 @@
+.navcontainer {
+    width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Alata', sans-serif;
+    color: rgb(235, 114, 77);
+}
+
+.links ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfoliotitle p {
+    font-size: 1.5rem;
+}
+
+.links ul p {
+    cursor: pointer;
+}
