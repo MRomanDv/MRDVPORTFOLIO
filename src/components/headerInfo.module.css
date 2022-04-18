@@ -14,7 +14,7 @@
 }
 .name h1 {
     position: relative;
-    font-size: 4.5vw;
+    font-size: 4.5rem;
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 248, 248);
     overflow: hidden;
@@ -32,8 +32,8 @@
 }
 
 
-.name span {
-    font-size: 2vw;
+.name span{
+    font-size: 2rem;
     color: rgb(248, 96, 58);
 }
 
@@ -85,5 +85,68 @@
     100% {
 
         width: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .headerinfocontainer {
+        flex-direction: column;
+
+    }
+    .descriptioncontainer {
+        width: 350px;
+        height: 350px;
+    }
+    .descriptioncontainer p {
+        line-height: 1.2rem;
+        font-size: 1rem;
+        font-family: 'Alata', sans-serif;
+    }
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name span {
+        font-size: 1rem;
+    }
+    .infoinjson {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .name h1 {
+        font-size: 3rem;
+    }
+    .infoinjson p {
+        font-size: .9rem;
+    }
+    .descriptioncontainer {
+        width: 280px;
+        height: 280px;
+    }
+    .descriptioncontainer p {
+        line-height: 1rem;
+        font-size: .9rem;
+        font-family: 'Alata', sans-serif;
+    }
+}
+
+@media screen and (max-width:350px),
+screen and (max-height:750px) {
+    .name h1 {
+        font-size: 2rem;
+    }
+    .descriptioncontainer {
+        width: 240px;
+        height: 240px;
+    }
+    .descriptioncontainer p {
+        line-height: 1rem;
+        font-size:10px;
+        font-family: 'Alata', sans-serif;
     }
 }

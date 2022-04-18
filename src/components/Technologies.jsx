@@ -12,7 +12,8 @@ import {DiNpm} from 'react-icons/di'
 import {DiTerminal} from 'react-icons/di'
 import {DiVisualstudio} from 'react-icons/di'
 import {DiPhotoshop} from 'react-icons/di'
-import {DiHeroku} from 'react-icons/di'
+import { DiMongodb } from 'react-icons/di'
+import { DiHeroku } from 'react-icons/di'
 
 import {MdDeviceHub} from 'react-icons/md'
 import classes from './technologies.module.css'
@@ -21,7 +22,7 @@ function Technologies(){
     return (
         <section className={classes.technologiessection} id="technologies">
             <div className={classes.projectstitle}><h2>technologies</h2><MdDeviceHub className={classes.icon}/></div>
-            <h3>These are the main technologies and tools i use for developing</h3>
+            <div className={classes.subtitle}><h3>These are the main technologies and tools i use for developing</h3></div>
 
             <div className={classes.iconescontainer}>
             <div className={classes.iconediv}>
@@ -77,8 +78,16 @@ function Technologies(){
                 <h4>Vs code</h4>
             </div>
             <div className={classes.iconediv}>
+                <DiHeroku className={classes.heroku}/>
+                <h4>Heroku</h4>
+            </div>
+            <div className={classes.iconediv}>
                 <DiPhotoshop className={classes.ps}/>
                 <h4>Photoshop</h4>
+            </div>
+            <div className={classes.iconediv}>
+                <DiMongodb className={classes.nodejs}/>
+                <h4>Mongodb</h4>
             </div>
             </div>
         </section>

@@ -13,15 +13,21 @@
     align-items: center;
     margin-bottom: 1rem;
 }
+.subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .projectstitle h2 {
-    font-size: 4vw;
+    font-size: 4rem;
     font-family: 'Righteous', cursive;
     margin-right: 1rem;
 }
 .projectstitle .icon {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     color:  rgb(228, 89, 47);
 }
+
 
 .technologiessection h3 {
     text-align: center;
@@ -37,6 +43,9 @@
     gap: 4rem;
     text-align: center;
 }
+.iconediv h4 {
+    color: rgb(214, 192, 185);
+}
 
 .react,
 .js,
@@ -51,7 +60,8 @@
 .vscode,
 .mysql,
 .css,
-.ps
+.ps,
+.heroku
  {
     font-size: 6vmin;
     transition: 1s ease;
@@ -120,4 +130,44 @@
 .ps:hover {
     transform: scale(1.3);
     color: rgb(20, 157, 211);
+}
+.heroku:hover {
+    transform: scale(1.3);
+    color: rgb(154, 74, 165);
+}
+
+@media screen and (max-width:800px) {
+    
+    .subtitle h3 {
+        font-size: 1rem;
+    }
+    .iconescontainer {
+        width: 100%;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .projectstitle h2 {
+        font-size: 2.5rem;
+    }
+    .projectstitle .icon {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        width: 200px;
+        margin: auto;
+    }
+    .subtitle h3 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .projectstitle h2 {
+        font-size: 2rem;
+    }
+    .projectstitle .icon {
+        font-size: 1.5rem;
+    }
 }

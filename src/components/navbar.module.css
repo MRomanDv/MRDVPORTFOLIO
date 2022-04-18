@@ -28,3 +28,27 @@
     color: rgb(228, 218, 216);
     margin-left: 5px;
 }
+
+@media screen and (max-width:650px) {
+    .links ul {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+    .navcontainer {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navcontainer {
+        flex-direction: column;
+    }
+    .portfoliotitle p {
+        font-size: 1rem;
+    }
+    .icon {
+        font-size: 10px;
+    }
+}
