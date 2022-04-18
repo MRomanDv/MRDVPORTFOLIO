@@ -1,8 +1,26 @@
+import { useEffect } from 'react'
+import {motion, useAnimation} from 'framer-motion'
+import { useInView} from 'react-intersection-observer'
 import classes from './headerInfo.module.css'
 
 function HeaderInfo(){
+    const {ref, inView} = useInView()
+    const animation = useAnimation()
+
+    useEffect(()=>{
+        if(inView){
+            animation.start({
+                x:0,
+                transition:{type:'spring', duration:2 , bounce:0.3} 
+            })
+        }
+        if(!inView){
+            animation.start({x:'-100vw'})
+        }
+    },[inView])
+
     return (
-        <div className={classes.headerinfocontainer}>
+        <motion.div ref={ref} className={classes.headerinfocontainer} animate={animation}>
                 <div className={classes.name}>
                 <h1 data-text="Miguel&nbsp;Román">Miguel Román</h1>
                 <span>Fullstack Developer</span>
@@ -21,7 +39,7 @@ function HeaderInfo(){
                         i love learning everyday about new technologies
                         and mastering the tech that i already have learned, i love the front end field as well as the backend "</p>
                 </div>
-        </div>
+        </motion.div>
     )
 }
 

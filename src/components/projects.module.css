@@ -1,5 +1,61 @@
 .projectssection {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(26, 25, 25);
+}
+
+.projectstitle {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.projectstitle h2 {
+    font-size: 4vw;
+    font-family: 'Righteous', cursive;
+    margin-right: 1rem;
+}
+.projectstitle .icon {
+    font-size: 2.5vw;
+    color:  rgb(235, 114, 77);
+}
+
+.cardscontainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.card {
+    width: 350px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(231, 117, 82);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.card h3 {
+    color: rgb(231, 117, 82);
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+}
+.card p {
+    color: rgb(223, 213, 213);
+    font-family:'Alata', sans-serif;
+    margin-bottom: 10px;
+}
+.card ul {
+    color: rgb(134, 160, 209);
+    font-family: 'Righteous', cursive;
+    list-style: none;
 }

@@ -6,6 +6,10 @@
     font-family:'Alata', sans-serif;
     color: rgb(235, 114, 77);
 }
+.navcontainer a {
+    text-decoration: none;
+    color: rgb(235, 114, 77);
+}
 
 .links ul {
     width: 400px;
@@ -19,4 +23,8 @@
 
 .links ul p {
     cursor: pointer;
+}
+.icon {
+    color: rgb(228, 218, 216);
+    margin-left: 5px;
 }
